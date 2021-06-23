@@ -1,0 +1,20 @@
+.contacts__send-button {
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25;
+  color: white;
+  background-color: #070707;
+  border-radius: 50px;
+  border: none;
+  min-width: 180px;
+  min-height: 42px;
+  cursor: pointer;
+  transition: opacity .3s;
+  box-shadow: 0 12px 10px rgba(7, 7, 7, 0.1);
+  margin-bottom: 85px;
+}
+
+.contacts__send-button:hover {
+  opacity: .8;
+}
