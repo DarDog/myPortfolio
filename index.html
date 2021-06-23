@@ -11,18 +11,18 @@
 <body class="root">
 <div class="page">
   <header class="header page__header">
-    <nav class="header__menu">
+    <nav class="menu">
       <ul class="list menu__list">
-        <li class="menu__item"><a href="" class="menu__link menu__link_active">Home</a></li>
-        <li class="menu__item"><a href="" class="menu__link">About me</a></li>
-        <li class="menu__item"><a href="" class="menu__link">Skills</a></li>
-        <li class="menu__item"><a href="" class="menu__link">Portfolio</a></li>
-        <li class="menu__item"><a href="" class="menu__link">Contacts</a></li>
+        <li class="menu__item"><a href="#home" class="menu__link menu__link_active">Home</a></li>
+        <li class="menu__item"><a href="#about" class="menu__link">About me</a></li>
+        <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+        <li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
+        <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
       </ul>
     </nav>
   </header>
   <main class="main page__main">
-    <section class="home main__home">
+    <section class="home main__home" id="home">
       <div class="home__info">
         <h1 class="home__name">Vlad Subbotin</h1>
         <p class="home__profession">Front-end developer 23 years old, Russia</p>
@@ -33,13 +33,13 @@
       </div>
       <img src="images/DSC_025.jpg" alt="" class="home__photo">
     </section>
-    <section class="about main__about">
+    <section class="about main__about" id="about">
       <h2 class="title about__title">About me</h2>
       <p class="paragraph about__paragraph">Hi, i'm Vlad - Front-end developer from russia.</p>
       <p class="paragraph about__paragraph">I'm studying at courses "Web-developer" in "Яндекс практикум".</p>
       <p class="paragraph about__paragraph">Ready to implement excellent projects with wonderful people.</p>
     </section>
-    <section class="skills main__skills">
+    <section class="skills main__skills" id="skills">
       <h2 class="title skills__title">Skills</h2>
       <p class="paragraph skills__paragraph">I work with languages and programmes ​​like</p>
       <ul class="list skills__list">
@@ -111,45 +111,48 @@
         </li>
       </ul>
     </section>
-    <section class="portfolio main__portfolio">
+    <section class="portfolio main__portfolio" id="portfolio">
       <h2 class="title portfolio__title">Portfolio</h2>
       <ul class="list portfolio__list">
         <li class="portfolio__item">
           <img src="images/how-to-learn-preview.png" alt="preview of how to learn " class="portfolio__preview">
-          <a href="" class="portfolio__link">Business card website about training</a>
+          <a href="https://dardog.github.io/how-to-learn/" class="portfolio__link" target="_blank">Business card website
+            about training</a>
         </li>
         <li class="portfolio__item">
           <img src="images/russian-travel-preview.png" alt="preview of russian travel" class="portfolio__preview">
-          <a href="" class="portfolio__link">Business card website about travel in Russia - Concept</a>
+          <a href="https://dardog.github.io/russian-travel/" class="portfolio__link" target="_blank">Business card
+            website about travel in Russia - Concept</a>
         </li>
         <li class="portfolio__item">
           <img src="images/mesto-preview.png" alt="preview of mesto" class="portfolio__preview">
-          <a href="" class="portfolio__link">Landing site for travel photographers - Concept</a>
+          <a href="https://dardog.github.io/mesto/" class="portfolio__link" target="_blank">Landing site for travel
+            photographers - Concept</a>
         </li>
       </ul>
     </section>
-    <section class="contacts main__contacts">
+    <section class="contacts main__contacts" id="contacts">
       <h2 class="title contacts__title">Contacts</h2>
       <p class="paragraph contacts__paragraph">Want to know more or just chat? You are welcome!</p>
       <button type="button" class="contacts__send-button">Send message</button>
       <ul class="list contacts__list">
         <li class="contacts__item">
-          <a href="" class="contacts__link">
+          <a href="https://github.com/DarDog" class="contacts__link" target="_blank">
             <img src="images/github-logo_icon-icons.com_73546.svg" alt="github" class="contacts__social-icon">
           </a>
         </li>
         <li class="contacts__item">
-          <a href="" class="contacts__link">
+          <a href="https://vk.com/me_here_fine" class="contacts__link" target="_blank">
             <img src="images/vk-social-network-logo_icon-icons.com_73339.svg" alt="VK" class="contacts__social-icon">
           </a>
         </li>
         <li class="contacts__item">
-          <a href="" class="contacts__link">
+          <a href="https://www.instagram.com/samedyvlad/" class="contacts__link" target="_blank">
             <img src="images/Instagram_New_icon-icons.com_69008.svg" alt="Instagram" class="contacts__social-icon">
           </a>
         </li>
         <li class="contacts__item">
-          <a href="" class="contacts__link">
+          <a href="https://t.me/DarDog" class="contacts__link" target="_blank">
             <img src="images/telegram_icon_131945.svg" alt="Telegram" class="contacts__social-icon">
           </a>
         </li>
@@ -157,5 +160,6 @@
     </section>
   </main>
 </div>
+<script src="scripts"></script>
 </body>
 </html>

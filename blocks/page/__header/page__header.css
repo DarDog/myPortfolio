@@ -1,5 +1,6 @@
 .page__header {
   margin-bottom: 40px;
   width: 100%;
-  max-width: 940px;
+  position: fixed;
+  top: 0px;
 }
