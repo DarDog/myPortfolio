@@ -1,0 +1,9 @@
+.skills__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #828282;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 0 40px;
+}

@@ -15,6 +15,7 @@
 @import url(../blocks/page/__main/page__main.css);
 
 @import url(../blocks/home/home.css);
+@import url(../blocks/main/__home/main__home.css);
 @import url(../blocks/home/__info/home__info.css);
 @import url(../blocks/home/__name/home__name.css);
 @import url(../blocks/home/__profession/home__profession.css);
@@ -25,5 +26,21 @@
 
 @import url(../blocks/about/about.css);
 @import url(../blocks/main/__about/main__about.css);
+@import url(../blocks/title/title.css);
 @import url(../blocks/about/__title/about__title.css);
+@import url(../blocks/paragraph/paragraph.css);
 @import url(../blocks/about/__paragraph/about__paragraph.css);
+
+@import url(../blocks/skills/skills.css);
+@import url(../blocks/main/__skills/main__skills.css);
+@import url(../blocks/skills/__title/skills__title.css);
+@import url(../blocks/skills/__paragraph/skills__paragraph.css);
+@import url(../blocks/skills/__list/skills__list.css);
+@import url(../blocks/skills/__items/skills__items.css);
+@import url(../blocks/skills/__icon/skills__icon.css);
+@import url(../blocks/skills/__name/skills__name.css);
+@import url(../blocks/skills/__rate/skills__rate.css);
+@import url(../blocks/rate/rate.css);
+@import url(../blocks/rate/_active/rate_active.css);
+
+
