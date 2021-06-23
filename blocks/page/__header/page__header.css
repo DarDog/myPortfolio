@@ -2,5 +2,12 @@
   margin-bottom: 40px;
   width: 100%;
   position: fixed;
-  top: 0px;
+  top: 0;
 }
+
+@media screen and (max-width: 940px){
+  .page__header {
+    display: none;
+  }
+}
+

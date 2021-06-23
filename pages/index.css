@@ -23,6 +23,7 @@
 @import url(../blocks/lang/__link/lang__link.css);
 @import url(../blocks/lang/__link/_active/lang__link_active.css);
 @import url(../blocks/home/__photo/home__photo.css);
+@import url(../blocks/home/__menu/home__meny.css);
 
 @import url(../blocks/about/about.css);
 @import url(../blocks/main/__about/main__about.css);

@@ -9,3 +9,9 @@
   overflow: visible;
   width: 200px;
 }
+
+@media screen and (max-width: 940px) {
+  .home__name {
+    margin-bottom: 23px;
+  }
+}

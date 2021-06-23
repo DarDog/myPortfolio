@@ -1,0 +1,14 @@
+.home__menu {
+  background: url("../../../images/burger.svg") no-repeat center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 20px;
+}
+
+@media screen and (min-width: 941px){
+  .home__menu {
+    display: none;
+  }
+}

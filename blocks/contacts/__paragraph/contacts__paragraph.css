@@ -2,3 +2,9 @@
   margin-bottom: 30px;
   max-width: 275px;
 }
+
+@media screen and (max-width: 940px){
+  .contacts__paragraph {
+    margin-bottom: 40px;
+  }
+}

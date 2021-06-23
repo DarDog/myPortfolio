@@ -1,3 +1,9 @@
 .lang {
   transform: rotate(270deg);
 }
+
+@media screen and (max-width: 940px) {
+  .lang {
+    display: none;
+  }
+}

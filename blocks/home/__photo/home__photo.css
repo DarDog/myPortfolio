@@ -1,5 +1,16 @@
 .home__photo {
-  max-height: 450px;
+  width: 940px;
+  height: 400px;
   object-fit: cover;
+  object-position: center;
   margin-bottom: 105px;
+}
+
+@media screen and (max-width: 940px) {
+  .home__photo {
+    width: 85vw;
+    height: 500px;
+    object-position: 80% 50%;
+    margin-bottom: 80px;
+  }
 }

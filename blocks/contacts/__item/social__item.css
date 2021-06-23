@@ -5,3 +5,15 @@
 .contacts__item:last-of-type {
   margin-right: 0;
 }
+
+@media screen and (max-width: 940px){
+  .contacts__item {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .contacts__item {
+    margin-right: 30px;
+  }
+}

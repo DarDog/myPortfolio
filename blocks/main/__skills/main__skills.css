@@ -1,3 +1,9 @@
 .main__skills {
-  min-width: 940px;
+  max-width: 940px;
+}
+
+@media screen and (max-width: 940px){
+  .main__skills {
+    max-width: 85vw;
+  }
 }

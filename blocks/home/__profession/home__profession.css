@@ -9,3 +9,9 @@
   overflow: visible;
   width: 180px;
 }
+
+@media screen and (max-width: 940px) {
+  .home__profession {
+    margin-bottom: 35px;
+  }
+}

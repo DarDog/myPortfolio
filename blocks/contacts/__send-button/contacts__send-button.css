@@ -18,3 +18,11 @@
 .contacts__send-button:hover {
   opacity: .8;
 }
+
+@media screen and (max-width: 940px){
+  .contacts__send-button {
+    width: 85vw;
+    max-width: 316px;
+    margin-bottom: 50px;
+  }
+}

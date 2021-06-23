@@ -1,3 +1,9 @@
 .contacts__title {
   margin: 115px 0 20px;
 }
+
+@media screen and (max-width: 940px){
+  .contacts__title {
+    margin: 80px 0 27px;
+  }
+}

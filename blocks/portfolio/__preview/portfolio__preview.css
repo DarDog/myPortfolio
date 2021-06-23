@@ -1,4 +1,13 @@
 .portfolio__preview {
   max-width: 940px;
   margin-bottom: 45px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 940px){
+  .portfolio__preview {
+    max-width: 85vw;
+    margin-bottom: 35px;
+  }
 }

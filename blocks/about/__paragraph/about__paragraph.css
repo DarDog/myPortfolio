@@ -1,7 +1,18 @@
 .about__paragraph {
   margin: 0 0 30px;
+  max-width: 450px;
 }
 
 .about__paragraph:last-of-type {
   margin-bottom: 105px;
+}
+
+@media screen and (max-width: 940px){
+  .about__paragraph {
+    max-width: 85vw;
+  }
+
+  .about__paragraph:last-of-type {
+    margin-bottom: 75px;
+  }
 }
