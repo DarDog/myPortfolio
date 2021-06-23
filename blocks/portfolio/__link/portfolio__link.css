@@ -1,0 +1,10 @@
+.portfolio__link {
+  color: #070707;
+  font-size: 18px;
+  line-height: 1.22;
+  transition: opacity .3s;
+}
+
+.portfolio__link:hover {
+  opacity: .6;
+}

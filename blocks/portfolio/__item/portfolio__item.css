@@ -1,0 +1,10 @@
+.portfolio__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.portfolio__item:last-of-type {
+  margin-bottom: 0;
+}

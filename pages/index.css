@@ -6,6 +6,7 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/page/__header/page__header.css);
 @import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/list/list.css);
 @import url(../blocks/menu/menu.css);
 @import url(../blocks/menu/__list/menu__list.css);
 @import url(../blocks/menu/__link/menu__link.css);
@@ -42,5 +43,13 @@
 @import url(../blocks/skills/__rate/skills__rate.css);
 @import url(../blocks/rate/rate.css);
 @import url(../blocks/rate/_active/rate_active.css);
+
+@import url(../blocks/portfolio/portfolio.css);
+@import url(../blocks/main/__portfolio/main__portfolio.css);
+@import url(../blocks/portfolio/__title/portfolio__title.css);
+@import url(../blocks/portfolio/__list/portfolio__list.css);
+@import url(../blocks/portfolio/__preview/portfolio__preview.css);
+@import url(../blocks/portfolio/__item/portfolio__item.css);
+@import url(../blocks/portfolio/__link/portfolio__link.css);
 
 
