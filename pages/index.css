@@ -10,3 +10,15 @@
 @import url(../blocks/menu/__list/menu__list.css);
 @import url(../blocks/menu/__link/menu__link.css);
 @import url(../blocks/menu/__link/_active/menu__link_active.css);
+
+@import url(../blocks/main/main.css);
+@import url(../blocks/page/__main/page__main.css);
+
+@import url(../blocks/home/home.css);
+@import url(../blocks/home/__info/home__info.css);
+@import url(../blocks/home/__name/home__name.css);
+@import url(../blocks/home/__profession/home__profession.css);
+@import url(../blocks/lang/lang.css);
+@import url(../blocks/lang/__link/lang__link.css);
+@import url(../blocks/lang/__link/_active/lang__link_active.css);
+@import url(../blocks/home/__photo/home__photo.css);

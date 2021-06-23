@@ -1,0 +1,5 @@
+.home__photo {
+  max-height: 450px;
+  object-fit: cover;
+  margin-bottom: 105px;
+}
