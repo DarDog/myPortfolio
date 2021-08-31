@@ -1,6 +1,8 @@
 const sectionsElements = Array.from(document.querySelectorAll('section')),
     navBarElement = document.querySelector('.menu__list'),
-    myAgeElement = document.querySelector('.myAge');
+    myAgeElement = document.querySelector('.myAge'),
+    headerElement = document.querySelector('.header');
+let preventWindowPosition = window.pageYOffset;
 
 const showMyAge = () => {
   const date = new Date();
@@ -39,4 +41,14 @@ navBarElement.addEventListener('click', (evt) => {
       behavior: 'smooth'
     })
   }
+})
+
+window.addEventListener('scroll', () => {
+  let currentWindowPosition = window.pageYOffset
+  if (preventWindowPosition > currentWindowPosition) {
+    headerElement.style.top = '0';
+  } else {
+    headerElement.style.top = '-88px'
+  }
+  preventWindowPosition = currentWindowPosition;
 })
