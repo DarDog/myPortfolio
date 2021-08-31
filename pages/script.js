@@ -1,5 +1,13 @@
-const sections = Array.from(document.querySelectorAll('section')),
-    navBar = document.querySelector('.menu__list');
+const sectionsElements = Array.from(document.querySelectorAll('section')),
+    navBarElement = document.querySelector('.menu__list'),
+    myAgeElement = document.querySelector('.myAge');
+
+const showMyAge = () => {
+  const date = new Date();
+  myAgeElement.textContent = date.getFullYear() - 1997
+}
+
+showMyAge()
 
 const getLinkId = (link) => {
   return link.getAttribute('href')
@@ -17,12 +25,12 @@ const observer = new IntersectionObserver((entries) => {
     }
   })
 }, {
-  threshold: .55
+  threshold: .4
 })
 
-sections.forEach(section => observer.observe(section))
+sectionsElements.forEach(section => observer.observe(section))
 
-navBar.addEventListener('click', (evt) => {
+navBarElement.addEventListener('click', (evt) => {
   evt.preventDefault();
 
   if (evt.target.classList.contains('menu__link')) {
