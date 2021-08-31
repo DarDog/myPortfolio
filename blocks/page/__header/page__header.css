@@ -1,8 +1,8 @@
 .page__header {
-  margin-bottom: 40px;
   width: 100%;
   position: fixed;
   top: 0;
+  transition: top .3s;
 }
 
 @media screen and (max-width: 940px){

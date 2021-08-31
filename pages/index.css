@@ -19,11 +19,8 @@
 @import url(../blocks/home/__info/home__info.css);
 @import url(../blocks/home/__name/home__name.css);
 @import url(../blocks/home/__profession/home__profession.css);
-@import url(../blocks/lang/lang.css);
-@import url(../blocks/lang/__link/lang__link.css);
-@import url(../blocks/lang/__link/_active/lang__link_active.css);
 @import url(../blocks/home/__photo/home__photo.css);
-@import url(../blocks/home/__menu/home__meny.css);
+@import url(../blocks/mobile-menu/home__meny.css);
 
 @import url(../blocks/about/about.css);
 @import url(../blocks/main/__about/main__about.css);
@@ -40,9 +37,6 @@
 @import url(../blocks/skills/__items/skills__items.css);
 @import url(../blocks/skills/__icon/skills__icon.css);
 @import url(../blocks/skills/__name/skills__name.css);
-@import url(../blocks/skills/__rate/skills__rate.css);
-@import url(../blocks/rate/rate.css);
-@import url(../blocks/rate/_active/rate_active.css);
 
 @import url(../blocks/portfolio/portfolio.css);
 @import url(../blocks/main/__portfolio/main__portfolio.css);
@@ -56,9 +50,11 @@
 @import url(../blocks/main/__contacts/main__contacts.css);
 @import url(../blocks/contacts/__title/contacts__title.css);
 @import url(../blocks/contacts/__paragraph/contacts__paragraph.css);
-@import url(../blocks/contacts/__send-button/contacts__send-button.css);
 @import url(../blocks/contacts/__list/contacts__list.css);
 @import url(../blocks/contacts/__social-icon/contacts__social-icon.css);
 @import url(../blocks/contacts/__item/social__item.css);
+
+@import url(../blocks/pop-up/pop-up.css);
+@import url(../blocks/pop-up/__container/pop-up__container.css);
 
 
