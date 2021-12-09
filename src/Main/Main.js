@@ -1,16 +1,10 @@
 import React from 'react';
-import myFoto from "../../images/DSC_025.jpg";
+import Home from "./Home";
 
 const Main = () => {
   return (
     <main className="main page__main">
-      <section className="home main__home section" id="section-0">
-        <div className="home__info">
-          <h1 className="home__name">Vlad Subbotin</h1>
-          <p className="home__profession">Front-end developer <span className="myAge"></span> years old, Russia</p>
-        </div>
-        <img src={ myFoto } alt="" className="home__photo"/>
-      </section>
+      <Home />
       <section className="about main__about section" id="section-1">
         <h2 className="title about__title">About me</h2>
         <p className="paragraph about__paragraph">Hi, i'm Vlad - Front-end developer from russia.</p>
@@ -108,4 +102,4 @@ const Main = () => {
   );
 };
 
-export default Main();
+export default Main;
