@@ -1,0 +1,59 @@
+@import url(vendor/normalize.css);
+@import url(vendor/fonts.css);
+@import url(blocks/page/page.css);
+
+@import url(blocks/header/header.css);
+@import url(blocks/page/__header/page__header.css);
+@import url(blocks/list/list.css);
+@import url(blocks/menu/menu.css);
+@import url(blocks/menu/__list/menu__list.css);
+@import url(blocks/menu/__link/menu__link.css);
+@import url(blocks/menu/__link/_active/menu__link_active.css);
+
+@import url(blocks/main/main.css);
+@import url(blocks/page/__main/page__main.css);
+
+@import url(blocks/home/home.css);
+@import url(blocks/main/__home/main__home.css);
+@import url(blocks/home/__info/home__info.css);
+@import url(blocks/home/__name/home__name.css);
+@import url(blocks/home/__profession/home__profession.css);
+@import url(blocks/home/__photo/home__photo.css);
+@import url(blocks/mobile-menu/home__meny.css);
+
+@import url(blocks/about/about.css);
+@import url(blocks/main/__about/main__about.css);
+@import url(blocks/title/title.css);
+@import url(blocks/about/__title/about__title.css);
+@import url(blocks/paragraph/paragraph.css);
+@import url(blocks/about/__paragraph/about__paragraph.css);
+
+@import url(blocks/skills/skills.css);
+@import url(blocks/main/__skills/main__skills.css);
+@import url(blocks/skills/__title/skills__title.css);
+@import url(blocks/skills/__paragraph/skills__paragraph.css);
+@import url(blocks/skills/__list/skills__list.css);
+@import url(blocks/skills/__items/skills__items.css);
+@import url(blocks/skills/__icon/skills__icon.css);
+@import url(blocks/skills/__name/skills__name.css);
+
+@import url(blocks/portfolio/portfolio.css);
+@import url(blocks/main/__portfolio/main__portfolio.css);
+@import url(blocks/portfolio/__title/portfolio__title.css);
+@import url(blocks/portfolio/__list/portfolio__list.css);
+@import url(blocks/portfolio/__preview/portfolio__preview.css);
+@import url(blocks/portfolio/__item/portfolio__item.css);
+@import url(blocks/portfolio/__link/portfolio__link.css);
+
+@import url(blocks/contacts/contacts.css);
+@import url(blocks/main/__contacts/main__contacts.css);
+@import url(blocks/contacts/__title/contacts__title.css);
+@import url(blocks/contacts/__paragraph/contacts__paragraph.css);
+@import url(blocks/contacts/__list/contacts__list.css);
+@import url(blocks/contacts/__social-icon/contacts__social-icon.css);
+@import url(blocks/contacts/__item/social__item.css);
+
+@import url(blocks/pop-up/pop-up.css);
+@import url(blocks/pop-up/__container/pop-up__container.css);
+
+
