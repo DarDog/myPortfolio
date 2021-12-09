@@ -1,4 +1,9 @@
 import React from 'react';
+import htmlIcon from '../images/html_original_wordmark_logo_icon_146478.svg';
+import cssIcon from '../images/css_original_wordmark_logo_icon_146576.svg';
+import jsIcon from '../images/file_type_js_official_icon_130509.svg';
+import reactIcon from '../images/react_original_wordmark_logo_icon_146375.svg';
+import figmaIIcon from '../images/figma_logo_icon_170157.svg'
 
 const Skills = () => {
   return (
@@ -7,23 +12,23 @@ const Skills = () => {
       <p className="paragraph skills__paragraph">I work with languages and programmes ​​like</p>
       <ul className="list skills__list">
         <li className="skills__item">
-          <img src="images/html_original_wordmark_logo_icon_146478.svg" alt="Icon html5" className="skills__icon"/>
+          <img src={ htmlIcon } alt="Icon html5" className="skills__icon"/>
           <h3 className="skills__name">HTML5</h3>
         </li>
         <li className="skills__item">
-          <img src="images/css_original_wordmark_logo_icon_146576.svg" alt="Icon css3" className="skills__icon"/>
+          <img src={ cssIcon } alt="Icon css3" className="skills__icon"/>
           <h3 className="skills__name">CSS3</h3>
         </li>
         <li className="skills__item">
-          <img src="images/file_type_js_official_icon_130509.svg" alt="Icon js" className="skills__icon"/>
+          <img src={ jsIcon } alt="Icon js" className="skills__icon"/>
           <h3 className="skills__name">JS</h3>
         </li>
         <li className="skills__item">
-          <img src="images/react_original_wordmark_logo_icon_146375.svg" alt="Icon react" className="skills__icon"/>
+          <img src={ reactIcon } alt="Icon react" className="skills__icon"/>
           <h3 className="skills__name">react</h3>
         </li>
         <li className="skills__item">
-          <img src="images/figma_logo_icon_170157.svg" alt="Icon react" className="skills__icon"/>
+          <img src={ figmaIIcon } alt="Icon react" className="skills__icon"/>
           <h3 className="skills__name">Figma</h3>
         </li>
       </ul>

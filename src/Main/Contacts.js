@@ -1,4 +1,8 @@
 import React from 'react';
+import githubLogo from '../images/github-logo_icon-icons.com_73546.svg';
+import vkLogo from '../images/vk-social-network-logo_icon-icons.com_73339.svg';
+import instagramLogo from '../images/Instagram_New_icon-icons.com_69008.svg';
+import telegramLogo from '../images/telegram_icon_131945.svg';
 
 const Contacts = () => {
   return (
@@ -8,24 +12,24 @@ const Contacts = () => {
       <ul className="list contacts__list">
         <li className="contacts__item">
           <a href="https://github.com/DarDog" className="contacts__link" target="_blank">
-            <img src="images/github-logo_icon-icons.com_73546.svg" alt="github" className="contacts__social-icon"/>
+            <img src={ githubLogo } alt="github" className="contacts__social-icon"/>
           </a>
         </li>
         <li className="contacts__item">
           <a href="https://vk.com/me_here_fine" className="contacts__link" target="_blank">
-            <img src="images/vk-social-network-logo_icon-icons.com_73339.svg" alt="VK"
+            <img src={ vkLogo } alt="VK"
                  className="contacts__social-icon"/>
           </a>
         </li>
         <li className="contacts__item">
           <a href="https://www.instagram.com/samedyvlad/" className="contacts__link" target="_blank">
-            <img src="images/Instagram_New_icon-icons.com_69008.svg" alt="Instagram"
+            <img src={ instagramLogo } alt="Instagram"
                  className="contacts__social-icon"/>
           </a>
         </li>
         <li className="contacts__item">
           <a href="https://t.me/DarDog" className="contacts__link" target="_blank">
-            <img src="images/telegram_icon_131945.svg" alt="Telegram" className="contacts__social-icon"/>
+            <img src={ telegramLogo } alt="Telegram" className="contacts__social-icon"/>
           </a>
         </li>
       </ul>
