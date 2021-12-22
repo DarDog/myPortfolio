@@ -1,12 +1,21 @@
-import React from 'react';
-import githubLogo from '../images/github-logo_icon-icons.com_73546.svg';
-import vkLogo from '../images/vk-social-network-logo_icon-icons.com_73339.svg';
-import instagramLogo from '../images/Instagram_New_icon-icons.com_69008.svg';
-import telegramLogo from '../images/telegram_icon_131945.svg';
+import React, { useEffect } from 'react';
+import githubLogo from '../../images/github-logo_icon-icons.com_73546.svg';
+import vkLogo from '../../images/vk-social-network-logo_icon-icons.com_73339.svg';
+import instagramLogo from '../../images/Instagram_New_icon-icons.com_69008.svg';
+import telegramLogo from '../../images/telegram_icon_131945.svg';
+import { useInView } from "react-intersection-observer";
 
-const Contacts = () => {
+const Contacts = (props) => {
+  const { ref, inView } = useInView({
+    threshold: .5,
+  })
+
+  useEffect(() => {
+    props.onScroll(inView)
+  }, [inView])
+
   return (
-    <section className="contacts main__contacts section" id="section-4">
+    <section ref={ ref } className="contacts main__contacts section" id="section-4">
       <h2 className="title contacts__title">Contacts</h2>
       <p className="paragraph contacts__paragraph">Want to know more or just chat? You are welcome!</p>
       <ul className="list contacts__list">

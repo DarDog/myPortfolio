@@ -1,13 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from "./Header";
 import Main from "./Main/Main";
 
-
 function App() {
+  const [isHomeInView, setIsHomeInView] = useState(true);
+  const [isAboutMeInView, setIsAboutMeInView] = useState(false);
+  const [isSkillsInView, setIsSkillsInView] = useState(false);
+  const [isPortfolioInView, setIsPortfolioInView] = useState(false);
+  const [isContactsInView, setIsContactsInView] = useState(false);
+
   return (
     <div className="page">
-      <Header />
-      <Main />
+       <Header
+         isHomeInView={isHomeInView}
+         isAboutMeInView={isAboutMeInView}
+         isSkillsInView={isSkillsInView}
+         isPortfolioInView={isPortfolioInView}
+         isContactsInView={isContactsInView}
+       />
+       <Main
+         onHomeViewChange={setIsHomeInView}
+         onAboutMeViewChange={setIsAboutMeInView}
+         onSkillsViewChange={setIsSkillsInView}
+         onPortfolioViewChange={setIsPortfolioInView}
+         onContactsViewChange={setIsContactsInView}
+       />
     </div>
   );
 }
@@ -20,28 +37,11 @@ export default App;
 //   headerElement = document.querySelector('.header');
 // let preventWindowPosition = window.pageYOffset;
 //
-
-//
-// showMyAge()
 //
 // const getLinkId = (link) => {
 //   return link.getAttribute('href')
 // }
 //
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach(entry => {
-//     const links = Array.from(document.querySelectorAll('.menu__link'));
-//
-//     if (entry.isIntersecting) {
-//       links.forEach(link => {
-//         link.classList.toggle('menu__link_active',
-//           getLinkId(link).replace('#', '') === entry.target.id)
-//       })
-//     }
-//   })
-// }, {
-//   threshold: .4
-// })
 //
 // sectionsElements.forEach(section => observer.observe(section))
 //
