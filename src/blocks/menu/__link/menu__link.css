@@ -5,6 +5,8 @@
   line-height: 1.22;
   color: #828282;
   transition: color .3s;
+  background: none;
+  border: none;
 }
 
 .menu__link:hover {

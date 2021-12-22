@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useInView } from "react-intersection-observer";
 
-const AboutMe = () => {
+const AboutMe = (props) => {
+  const { ref, inView } = useInView({
+    threshold: .5,
+  })
+
+  useEffect(() => {
+    props.onScroll(inView)
+  }, [inView])
+
   return (
-    <section className="about main__about section" id="section-1">
+    <section ref={ ref } className="about main__about section" id="section-1">
       <h2 className="title about__title">About me</h2>
       <p className="paragraph about__paragraph">Hi, i'm Vlad - Front-end developer from russia.</p>
       <p className="paragraph about__paragraph">I'm studying at courses "Web-developer" in "Яндекс практикум".</p>
