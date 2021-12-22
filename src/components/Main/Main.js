@@ -9,21 +9,21 @@ const Main = (props) => {
 
   return (
     <main className="main page__main">
-      <Home
-        onScroll={props.onHomeViewChange}
-      />
-      <AboutMe
-        onScroll={props.onAboutMeViewChange}
-      />
-      <Skills
-        onScroll={props.onSkillsViewChange}
-      />
-      <Portfolio
-        onScroll={props.onPortfolioViewChange}
-      />
-      <Contacts
-        onScroll={props.onContactsViewChange}
-      />
+        <Home
+          onScroll={ props.onHomeViewChange }
+        />
+        <AboutMe
+          onScroll={ props.onAboutMeViewChange }
+        />
+        <Skills
+          onScroll={ props.onSkillsViewChange }
+        />
+        <Portfolio
+          onScroll={ props.onPortfolioViewChange }
+        />
+        <Contacts
+          onScroll={ props.onContactsViewChange }
+        />
     </main>
   );
 };
