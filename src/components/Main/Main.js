@@ -29,18 +29,3 @@ const Main = (props) => {
 };
 
 export default Main;
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach(entry => {
-//     const links = Array.from(document.querySelectorAll('.menu__link'));
-//
-//     if (entry.isIntersecting) {
-//       links.forEach(link => {
-//         link.classList.toggle('menu__link_active',
-//           getLinkId(link).replace('#', '') === entry.target.id)
-//       })
-//     }
-//   })
-// }, {
-//   threshold: .4
-// })
