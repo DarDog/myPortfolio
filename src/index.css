@@ -40,6 +40,11 @@
 @import url(blocks/skills/__items/skills__items.css);
 @import url(blocks/skills/__icon/skills__icon.css);
 @import url(blocks/skills/__name/skills__name.css);
+@import url(blocks/skills/__html/skills__html.css);
+@import url(blocks/skills/__css/skills__css.css);
+@import url(blocks/skills/__js/skills__js.css);
+@import url(blocks/skills/__react/skills__react.css);
+@import url(blocks/skills/__figma/skills__figma.css);
 
 @import url(blocks/portfolio/portfolio.css);
 @import url(blocks/main/__portfolio/main__portfolio.css);
@@ -56,6 +61,10 @@
 @import url(blocks/contacts/__list/contacts__list.css);
 @import url(blocks/contacts/__social-icon/contacts__social-icon.css);
 @import url(blocks/contacts/__item/social__item.css);
+@import url(blocks/contacts/__github/contacts__github.css);
+@import url(blocks/contacts/__vk/contacts__vk.css);
+@import url(blocks/contacts/__instagram/contacts__instagram.css);
+@import url(blocks/contacts/__telegram/contacts__telegram.css);
 
 @import url(blocks/pop-up/pop-up.css);
 @import url(blocks/pop-up/__container/pop-up__container.css);

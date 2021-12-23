@@ -1,8 +1,4 @@
 import React, { useEffect, useContext } from 'react';
-import githubLogo from '../../images/github-logo_icon-icons.com_73546.svg';
-import vkLogo from '../../images/vk-social-network-logo_icon-icons.com_73339.svg';
-import instagramLogo from '../../images/Instagram_New_icon-icons.com_69008.svg';
-import telegramLogo from '../../images/telegram_icon_131945.svg';
 import { useInView } from "react-intersection-observer";
 import { TranslationContext } from "../../context/translationContext";
 
@@ -23,25 +19,43 @@ const Contacts = (props) => {
       <p className="paragraph contacts__paragraph">{ translation.contactsParagraph }</p>
       <ul className="list contacts__list">
         <li className="contacts__item">
-          <a href="https://github.com/DarDog" rel={'noreferrer'} className="contacts__link" target="_blank">
-            <img src={ githubLogo } alt="github" className="contacts__social-icon"/>
+          <a
+            href="https://github.com/DarDog"
+            rel={'noreferrer'}
+            className="contacts__link"
+            target="_blank"
+          >
+            <div className="contacts__github"/>
           </a>
         </li>
         <li className="contacts__item">
-          <a href="https://vk.com/me_here_fine" rel={'noreferrer'} className="contacts__link" target="_blank">
-            <img src={ vkLogo } alt="VK"
-                 className="contacts__social-icon"/>
+          <a
+            href="https://vk.com/me_here_fine"
+            rel={'noreferrer'}
+            className="contacts__link"
+            target="_blank"
+          >
+            <div className="contacts__vk"/>
           </a>
         </li>
         <li className="contacts__item">
-          <a href="https://www.instagram.com/samedyvlad/" rel={'noreferrer'} className="contacts__link" target="_blank">
-            <img src={ instagramLogo } alt="Instagram"
-                 className="contacts__social-icon"/>
+          <a
+            href="https://www.instagram.com/samedyvlad/"
+            rel={'noreferrer'}
+            className="contacts__link"
+            target="_blank"
+          >
+            <div className="contacts__instagram"/>
           </a>
         </li>
         <li className="contacts__item">
-          <a href="https://t.me/DarDog" rel={'noreferrer'} className="contacts__link" target="_blank">
-            <img src={ telegramLogo } alt="Telegram" className="contacts__social-icon"/>
+          <a
+            href="https://t.me/DarDog"
+            rel={'noreferrer'}
+            className="contacts__link"
+            target="_blank"
+          >
+            <div className="contacts__telegram"/>
           </a>
         </li>
       </ul>
