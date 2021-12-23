@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/myPortfolio/static/css/main.9b8d7909.chunk.css",
+    "main.js": "/myPortfolio/static/js/main.14012cfb.chunk.js",
+    "main.js.map": "/myPortfolio/static/js/main.14012cfb.chunk.js.map",
+    "runtime-main.js": "/myPortfolio/static/js/runtime-main.a5ac29a5.js",
+    "runtime-main.js.map": "/myPortfolio/static/js/runtime-main.a5ac29a5.js.map",
+    "static/js/2.dabcc323.chunk.js": "/myPortfolio/static/js/2.dabcc323.chunk.js",
+    "static/js/2.dabcc323.chunk.js.map": "/myPortfolio/static/js/2.dabcc323.chunk.js.map",
+    "index.html": "/myPortfolio/index.html",
+    "static/css/main.9b8d7909.chunk.css.map": "/myPortfolio/static/css/main.9b8d7909.chunk.css.map",
+    "static/js/2.dabcc323.chunk.js.LICENSE.txt": "/myPortfolio/static/js/2.dabcc323.chunk.js.LICENSE.txt",
+    "static/media/DSC_025.a4e56fdc.jpg": "/myPortfolio/static/media/DSC_025.a4e56fdc.jpg",
+    "static/media/index.css": "/myPortfolio/static/media/burger.2e9d3a47.svg",
+    "static/media/mesto-preview.f280f4e5.png": "/myPortfolio/static/media/mesto-preview.f280f4e5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5ac29a5.js",
+    "static/js/2.dabcc323.chunk.js",
+    "static/css/main.9b8d7909.chunk.css",
+    "static/js/main.14012cfb.chunk.js"
+  ]
+}
