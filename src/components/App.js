@@ -1,31 +1,37 @@
 import React, { useState } from 'react'
 import Header from "./Header";
 import Main from "./Main/Main";
+import { TranslationContext, translation } from "../context/translationContext";
 
-function App() {
+function App () {
   const [isHomeInView, setIsHomeInView] = useState(true);
   const [isAboutMeInView, setIsAboutMeInView] = useState(false);
   const [isSkillsInView, setIsSkillsInView] = useState(false);
   const [isPortfolioInView, setIsPortfolioInView] = useState(false);
   const [isContactsInView, setIsContactsInView] = useState(false);
+  const [lang, setLang] = useState('ru');
 
   return (
-    <div className="page">
-       <Header
-         isHomeInView={isHomeInView}
-         isAboutMeInView={isAboutMeInView}
-         isSkillsInView={isSkillsInView}
-         isPortfolioInView={isPortfolioInView}
-         isContactsInView={isContactsInView}
-       />
-       <Main
-         onHomeViewChange={setIsHomeInView}
-         onAboutMeViewChange={setIsAboutMeInView}
-         onSkillsViewChange={setIsSkillsInView}
-         onPortfolioViewChange={setIsPortfolioInView}
-         onContactsViewChange={setIsContactsInView}
-       />
-    </div>
+    <TranslationContext.Provider value={ translation[lang] }>
+      <div className="page">
+        <Header
+          isHomeInView={ isHomeInView }
+          isAboutMeInView={ isAboutMeInView }
+          isSkillsInView={ isSkillsInView }
+          isPortfolioInView={ isPortfolioInView }
+          isContactsInView={ isContactsInView }
+        />
+        <Main
+          onHomeViewChange={ setIsHomeInView }
+          onAboutMeViewChange={ setIsAboutMeInView }
+          onSkillsViewChange={ setIsSkillsInView }
+          onPortfolioViewChange={ setIsPortfolioInView }
+          onContactsViewChange={ setIsContactsInView }
+          currentLang={ lang }
+          onLangChange={ setLang }
+        />
+      </div>
+    </TranslationContext.Provider>
   );
 }
 

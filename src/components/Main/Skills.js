@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import htmlIcon from '../../images/html_original_wordmark_logo_icon_146478.svg';
 import cssIcon from '../../images/css_original_wordmark_logo_icon_146576.svg';
 import jsIcon from '../../images/file_type_js_official_icon_130509.svg';
 import reactIcon from '../../images/react_original_wordmark_logo_icon_146375.svg';
 import figmaIIcon from '../../images/figma_logo_icon_170157.svg'
 import { useInView } from "react-intersection-observer";
+import { TranslationContext } from "../../context/translationContext";
 
 const Skills = (props) => {
+  const translation = useContext(TranslationContext);
   const { ref, inView } = useInView({
     threshold: .5,
   })
@@ -16,9 +18,9 @@ const Skills = (props) => {
   }, [inView])
 
   return (
-    <section ref={ref} className="skills main__skills section" id="section-2">
-      <h2 className="title skills__title">Skills</h2>
-      <p className="paragraph skills__paragraph">I work with languages and programmes ​​like</p>
+    <section ref={ ref } className="skills main__skills section" id="section-2">
+      <h2 className="title skills__title">{ translation.headers.skills }</h2>
+      <p className="paragraph skills__paragraph">{ translation.skillsInfo }</p>
       <ul className="list skills__list">
         <li className="skills__item">
           <img src={ htmlIcon } alt="Icon html5" className="skills__icon"/>

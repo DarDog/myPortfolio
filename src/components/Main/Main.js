@@ -11,6 +11,8 @@ const Main = (props) => {
     <main className="main page__main">
         <Home
           onScroll={ props.onHomeViewChange }
+          currentLang={ props.currentLang }
+          onLangChange={ props.onLangChange }
         />
         <AboutMe
           onScroll={ props.onAboutMeViewChange }

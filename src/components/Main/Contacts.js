@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import githubLogo from '../../images/github-logo_icon-icons.com_73546.svg';
 import vkLogo from '../../images/vk-social-network-logo_icon-icons.com_73339.svg';
 import instagramLogo from '../../images/Instagram_New_icon-icons.com_69008.svg';
 import telegramLogo from '../../images/telegram_icon_131945.svg';
 import { useInView } from "react-intersection-observer";
+import { TranslationContext } from "../../context/translationContext";
 
 const Contacts = (props) => {
+  const translation = useContext(TranslationContext);
+
   const { ref, inView } = useInView({
     threshold: .5,
   })
@@ -16,8 +19,8 @@ const Contacts = (props) => {
 
   return (
     <section ref={ ref } className="contacts main__contacts section" id="section-4">
-      <h2 className="title contacts__title">Contacts</h2>
-      <p className="paragraph contacts__paragraph">Want to know more or just chat? You are welcome!</p>
+      <h2 className="title contacts__title">{ translation.headers.contacts }</h2>
+      <p className="paragraph contacts__paragraph">{ translation.contactsParagraph }</p>
       <ul className="list contacts__list">
         <li className="contacts__item">
           <a href="https://github.com/DarDog" className="contacts__link" target="_blank">
