@@ -1,0 +1,12 @@
+.main__home {
+  padding-top: 128px;
+  min-width: 940px;
+  position: relative;
+}
+
+@media screen and (max-width: 940px) {
+  .main__home {
+    min-width: 85vw;
+    padding-top: 65px;
+  }
+}

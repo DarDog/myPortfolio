@@ -1,0 +1,14 @@
+.page__header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: top .5s;
+}
+
+@media screen and (max-width: 940px){
+  .page__header {
+    display: none;
+  }
+}
+

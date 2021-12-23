@@ -1,0 +1,17 @@
+.home__profession {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #070707;
+  word-wrap: break-word;
+  overflow: visible;
+  max-width: 151px;
+}
+
+@media screen and (max-width: 940px) {
+  .home__profession {
+    margin-bottom: 35px;
+  }
+}
