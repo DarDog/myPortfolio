@@ -21,11 +21,17 @@ const Portfolio = (props) => {
         <li className="portfolio__item">
           <img src={ mestoScreen } alt="preview of mesto" className="portfolio__preview"/>
           <a
-            href="https://dardog.github.io/mesto/"
+            href="http://mesto.subb.nomoredomains.rocks/"
             className="portfolio__link"
             target="_blank"
             rel={'noreferrer'}
           >{ translation.mestoLanding }</a>
+          <a
+            href="http://mesto.subb.nomoredomains.rocks/"
+            className="portfolio__link"
+            target="_blank"
+            rel={'noreferrer'}
+          >Github repository</a>
         </li>
       </ul>
     </section>

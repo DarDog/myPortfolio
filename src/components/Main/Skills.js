@@ -34,6 +34,14 @@ const Skills = (props) => {
           <h3 className="skills__name">react</h3>
         </li>
         <li className="skills__item">
+          <div className="skills__icon skills__nodejs" />
+          <h3 className="skills__name">node.js</h3>
+        </li>
+        <li className="skills__item">
+          <div className="skills__icon skills__php" />
+          <h3 className="skills__name">php</h3>
+        </li>
+        <li className="skills__item">
           <div className="skills__icon skills__figma" />
           <h3 className="skills__name">Figma</h3>
         </li>
