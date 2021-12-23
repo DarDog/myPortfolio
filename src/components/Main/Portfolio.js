@@ -12,7 +12,7 @@ const Portfolio = (props) => {
 
   useEffect(() => {
     props.onScroll(inView)
-  }, [inView])
+  })
 
   return (
     <section ref={ ref } className="portfolio main__portfolio section" id="section-3">
@@ -24,6 +24,7 @@ const Portfolio = (props) => {
             href="https://dardog.github.io/mesto/"
             className="portfolio__link"
             target="_blank"
+            rel={'noreferrer'}
           >{ translation.mestoLanding }</a>
         </li>
       </ul>

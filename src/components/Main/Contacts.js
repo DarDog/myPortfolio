@@ -15,7 +15,7 @@ const Contacts = (props) => {
 
   useEffect(() => {
     props.onScroll(inView)
-  }, [inView])
+  })
 
   return (
     <section ref={ ref } className="contacts main__contacts section" id="section-4">
@@ -23,24 +23,24 @@ const Contacts = (props) => {
       <p className="paragraph contacts__paragraph">{ translation.contactsParagraph }</p>
       <ul className="list contacts__list">
         <li className="contacts__item">
-          <a href="https://github.com/DarDog" className="contacts__link" target="_blank">
+          <a href="https://github.com/DarDog" rel={'noreferrer'} className="contacts__link" target="_blank">
             <img src={ githubLogo } alt="github" className="contacts__social-icon"/>
           </a>
         </li>
         <li className="contacts__item">
-          <a href="https://vk.com/me_here_fine" className="contacts__link" target="_blank">
+          <a href="https://vk.com/me_here_fine" rel={'noreferrer'} className="contacts__link" target="_blank">
             <img src={ vkLogo } alt="VK"
                  className="contacts__social-icon"/>
           </a>
         </li>
         <li className="contacts__item">
-          <a href="https://www.instagram.com/samedyvlad/" className="contacts__link" target="_blank">
+          <a href="https://www.instagram.com/samedyvlad/" rel={'noreferrer'} className="contacts__link" target="_blank">
             <img src={ instagramLogo } alt="Instagram"
                  className="contacts__social-icon"/>
           </a>
         </li>
         <li className="contacts__item">
-          <a href="https://t.me/DarDog" className="contacts__link" target="_blank">
+          <a href="https://t.me/DarDog" rel={'noreferrer'} className="contacts__link" target="_blank">
             <img src={ telegramLogo } alt="Telegram" className="contacts__social-icon"/>
           </a>
         </li>

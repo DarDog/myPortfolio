@@ -17,10 +17,9 @@ const Home = (props) => {
 
   useEffect(() => {
     props.onScroll(inView)
-  }, [inView])
+  })
 
   const handleLangChange = (lang) => {
-    console.log(lang)
     props.onLangChange(lang)
   }
 
@@ -28,7 +27,7 @@ const Home = (props) => {
     <section ref={ ref } className="home main__home section" id="section-0">
       <div className="home__info">
         <h1 className="home__name">{ translation.name }</h1>
-        <p className="home__profession">{ translation.profession } <span
+        <p className="home__profession">{ translation.profession }{ '\n' }<span
           className="myAge">{ getMyAge() }</span> { translation.info }</p>
         <div className='lang'>
           <button

@@ -15,7 +15,7 @@ const Skills = (props) => {
 
   useEffect(() => {
     props.onScroll(inView)
-  }, [inView])
+  })
 
   return (
     <section ref={ ref } className="skills main__skills section" id="section-2">

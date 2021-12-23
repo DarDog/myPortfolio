@@ -7,7 +7,7 @@
   color: #070707;
   word-wrap: break-word;
   overflow: visible;
-  width: 180px;
+  max-width: 151px;
 }
 
 @media screen and (max-width: 940px) {
