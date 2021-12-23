@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll'
+import React, { useState, useEffect, useContext } from 'react';
+import { Link } from 'react-scroll'
+import { TranslationContext } from "../context/translationContext";
 
 const Header = (props) => {
   const [isHidden, setIsHidden] = useState(false);
+  const translation = useContext(TranslationContext);
+
   let preventWindowPosition = window.pageYOffset;
 
   const handleScroll = () => {
@@ -34,7 +37,7 @@ const Header = (props) => {
               smooth={ true }
               offset={ -90 }
               duration={ 700 }
-              className={ `menu__link ${ props.isHomeInView && 'menu__link_active' }` }>Home
+              className={ `menu__link ${ props.isHomeInView && 'menu__link_active' }` }>{ translation.headers.home }
             </Link>
           </li>
           <li className="menu__item">
@@ -43,7 +46,7 @@ const Header = (props) => {
               smooth={ true }
               offset={ -90 }
               duration={ 700 }
-              className={ `menu__link ${ props.isAboutMeInView && 'menu__link_active' }` }>About me
+              className={ `menu__link ${ props.isAboutMeInView && 'menu__link_active' }` }>{ translation.headers.about }
             </Link>
           </li>
           <li className="menu__item">
@@ -52,7 +55,7 @@ const Header = (props) => {
               smooth={ true }
               offset={ -90 }
               duration={ 700 }
-              className={ `menu__link ${ props.isSkillsInView && 'menu__link_active' }` }>Skills
+              className={ `menu__link ${ props.isSkillsInView && 'menu__link_active' }` }>{ translation.headers.skills }
             </Link>
           </li>
           <li className="menu__item">
@@ -61,7 +64,7 @@ const Header = (props) => {
               smooth={ true }
               offset={ -90 }
               duration={ 700 }
-              className={ `menu__link ${ props.isPortfolioInView && 'menu__link_active' }` }>Portfolio
+              className={ `menu__link ${ props.isPortfolioInView && 'menu__link_active' }` }>{ translation.headers.portfolio }
             </Link>
           </li>
           <li className="menu__item">
@@ -70,7 +73,7 @@ const Header = (props) => {
               smooth={ true }
               offset={ -90 }
               duration={ 700 }
-              className={ `menu__link ${ props.isContactsInView && 'menu__link_active' }` }>Contacts
+              className={ `menu__link ${ props.isContactsInView && 'menu__link_active' }` }>{ translation.headers.contacts }
             </Link>
           </li>
         </ul>

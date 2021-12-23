@@ -2,7 +2,6 @@
   padding-top: 128px;
   min-width: 940px;
   position: relative;
-  z-index: -1;
 }
 
 @media screen and (max-width: 940px) {
